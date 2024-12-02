@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Razer Store - Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="assignment.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/razerlogo.png" alt="Razer Logo" aria-label="Razer Logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index1.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="actions">
+            <input type="text" placeholder="Search..." class="search-bar">
+            <a href="login.html" class="signin-btn">Sign In</a>
+            <a href="signup.html" class="signup-btn">Sign Up</a>
+            <a href="cart.html" class="cart-icon">🛒 (0)</a>
+        </div>
+    </header>
+    <div class="login-container">
+        <div class="login-form">
+            <h1>Welcome Back!</h1>
+            <p>Login to access your Razer account.</p>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    <span class="error-message" id="password-error"></span>
+                </div>
+                <button type="submit" class="btn-login">Login</button>
+            </form>
+            <p class="signup-text">Don't have an account? <a href="signup.html">Sign up here</a>.</p>
+        </div>
+        <div class="login-banner">
+            <img src="images/razer login.jpg" alt="Razer Gaming" class="login-image">
+            <p>Unleash the power of the ultimate gaming ecosystem!</p>
+        </div>
+    </div>
+    
+    <script>
+        // Handle form submission
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            // Perform validation or AJAX calls here if needed
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+    
+            // Example validation (you can replace this with real logic)
+            if (email && password) {
+                // Redirect to homepage
+                window.location.href = 'index1.html';
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+    </script>
+    
+</body>
+</html>

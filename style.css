@@ -1,0 +1,1659 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+/* Search bar styles */
+.search-bar {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 15px;
+}
+
+/* Hero section styles */
+.hero {
+    background-color: #0a0a0a;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Navigation hover effects */
+nav ul li a:hover {
+    color: #00ff00;
+    transition: color 0.3s ease;
+}
+
+/* Actions button hover effects */
+.actions a:hover {
+    color: #00ff00;
+    transition: color 0.3s ease;
+}
+
+/* Hero section button styles */
+.hero-content .cta-button {
+    background-color: #00ff00;
+    color: #000;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.hero-content .cta-button:hover {
+    background-color: #009900;
+    transition: background-color 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('images/Leonardo_Phoenix_A_dimly_lit_futuristic_gaming_setup_with_a_sl_3\ \(1\).jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Call-to-Action Buttons */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #00ff00;
+    color: #121212;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #00cc00;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.cta-button.secondary {
+    background-color: #444444;
+    color: #fff;
+    border: 2px solid #00ff00;
+}
+
+.cta-button.secondary:hover {
+    background-color: #00ff00;
+    color: #121212;
+    border-color: #00cc00;
+}
+
+/* Featured Products Section */
+.featured-products {
+    padding: 60px 20px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00ff00;
+    margin-bottom: 20px;
+}
+
+.section-title p {
+    font-size: 1.25rem;
+    color: #dddddd;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ffffff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.6rem;
+    margin-top: 15px;
+}
+
+.product-card p {
+    font-size: 1.1rem;
+    color: #bbb;
+    margin: 10px 0;
+}
+
+.product-card span {
+    font-size: 1.3rem;
+    color: #00ff00;
+    font-weight: bold;
+}
+/* Deals Section */
+.deals {
+    background-color: #1a1a1a;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.deals .section-title h2 {
+    font-size: 2.5rem;
+    color: #00b140; /* Razer Green */
+    text-align: center;
+}
+
+.deals .section-title p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #ccc;
+}
+
+.deals-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.deal-card {
+    background-color: #262626;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #fff;
+}
+
+.deal-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.deal-card h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #00b140; /* Razer Green */
+}
+
+.deal-card p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.deal-price {
+    font-size: 1.2rem;
+    color: #ff4081; /* Highlight price with a bright color */
+    font-weight: bold;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00b140;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #007d32;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .products-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .products-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+}
+/* Support Section */
+.support {
+    background-color: #121212;
+    padding: 60px 0;
+    color: #fff;
+}
+
+.support .section-title h2 {
+    font-size: 2.5rem;
+    color: #00b140; /* Razer Green */
+    text-align: center;
+}
+
+.support .section-title p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.support-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.support-option {
+    background-color: #262626;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.support-option:hover {
+    background-color: #333;
+}
+
+.support-option i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #00b140;
+}
+
+.support-option h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #00b140;
+}
+
+.support-option p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00b140;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #007d32;
+}
+
+.cta-button.secondary {
+    background-color: #333;
+}
+
+.cta-button.secondary:hover {
+    background-color: #444;
+}
+
+.support-faq {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.support-faq h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #00b140;
+}
+
+.support-faq p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.support-faq a {
+    color: #00b140;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.support-faq a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #121212;
+    color: #dddddd;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.footer-logo img {
+    height: 55px;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #dddddd;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #00ff00;
+    transform: scale(1.05);
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    font-size: 1.8rem;
+    color: #dddddd;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #00ff00;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #888888;
+}
+
+/* Newsletter Section */
+.newsletter-signup {
+    padding: 60px 20px;
+    background-color: #121212;
+    text-align: center;
+}
+
+.newsletter-signup h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00ff00;
+    margin-bottom: 20px;
+}
+
+.newsletter-signup p {
+    font-size: 1.25rem;
+    color: #dddddd;
+    margin-bottom: 30px;
+}
+
+.signup-form {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.email-input {
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: 2px solid #444444;
+    width: 70%;
+    max-width: 500px;
+}
+
+.submit-button {
+    padding: 15px 30px;
+    background-color: #00ff00;
+    color: #121212;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #00cc00;
+    transform: translateY(-5px);
+}
+/* Bonus Features Section */
+.bonus-features {
+    background-color: #1f1f1f; /* Dark background */
+    color: #fff; /* White text */
+    padding: 50px 20px; /* Padding for spacing */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px; /* Limit the width */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.section-description {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.features-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #2c2c2c; /* Dark card background */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px); /* Slight lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); /* Shadow effect */
+}
+
+.feature-icon {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.feature-description {
+    font-size: 1rem;
+    color: #ccc; /* Light text for description */
+    line-height: 1.5;
+}
+
+/* Responsiveness for small screens */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
+
+    .feature-card {
+        padding: 15px;
+    }
+}
+/* Modal Styling */
+.auth-modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.auth-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #121212;
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.auth-modal .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #262626;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+.auth-form button {
+    background-color: #00b140;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.auth-form button:hover {
+    background-color: #007d32;
+}
+
+.social-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    width: 100%;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.social-btn:hover {
+    background-color: #444;
+}
+
+.social-btn i {
+    margin-right: 10px;
+}
+
+a {
+    color: #00b140;
+}
+.support {
+    background-color: #121212;
+    padding: 60px 0;
+    color: #fff;
+}
+
+.support .section-title h2 {
+    font-size: 2.5rem;
+    color: #00b140; /* Razer Green */
+    text-align: center;
+}
+
+.support .section-title p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+
+.support-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.support-option {
+    background-color: #262626;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Increased shadow for depth */
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.support-option:hover {
+    background-color: #333;
+}
+
+.support-option i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #00b140;
+}
+
+.support-option h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #00b140;
+}
+
+.support-option p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00b140;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #007d32;
+}
+
+.cta-button.secondary {
+    background-color: #333;
+}
+
+.cta-button.secondary:hover {
+    background-color: #444;
+}
+
+.support-faq {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.support-faq h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #00b140;
+}
+
+.support-faq p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+.support-faq a {
+    color: #00b140;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.support-faq a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .support-option {
+        width: 100%;  /* Stacking support options on smaller screens */
+        margin-bottom: 20px;  /* Add some spacing between items */
+    }
+}
+
+.cta-button:focus {
+    outline: 2px solid #00b140;
+    outline-offset: 2px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #201616;
+}
+
+header {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #111;
+    color: #fff;
+}
+
+.auth-form {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #916024;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 10px;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.auth-form button:hover {
+    background: #333;
+}
+.auth-background {
+    background: url('images/Leonardo_Phoenix_A_dimly_lit_futuristic_gaming_setup_with_a_sl_3\ \(1\).jpg') no-repeat center center fixed; /* Replace 'images/mybackground.jpg' with your image path */
+    background-size: cover; /* Ensures the image covers the entire background */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+/* Payment Logos Section */
+.payment-logos {
+    background-color: #222;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.payment-logos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Adds space between logos */
+    flex-wrap: wrap; /* Allows logos to wrap on smaller screens */
+    align-items: center;
+}
+
+.payment-logo {
+    width: 100px;  /* Set a fixed width for the logos */
+    height: auto;  /* Maintain aspect ratio */
+    max-height: 50px;  /* Optional: limit the max height */
+    object-fit: contain; /* Ensure the logos are scaled without distorting */
+    transition: transform 0.3s ease; /* Adds smooth hover effect */
+}
+
+.payment-logo:hover {
+    transform: scale(1.1); /* Slightly enlarge the logos on hover */
+}
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #121212;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav ul li a.active {
+    font-weight: bold;
+}
+
+header .cart-icon a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+header .cart-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+header .cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #00b140;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+/* Cart Section */
+.cart-section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.cart-section h2 {
+    text-align: center;
+    color: #00b140;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.cart-item img {
+    width: 120px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.item-details {
+    flex-grow: 1;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-details h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.item-details p {
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.item-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.item-quantity {
+    width: 60px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.remove-item {
+    padding: 5px 10px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.remove-item:hover {
+    background-color: #c0392b;
+}
+
+/* Cart Summary */
+.cart-summary {
+    margin-top: 40px;
+    text-align: center;
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.cart-summary h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cart-summary p {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.checkout-btn {
+    padding: 10px 20px;
+    background-color: #00b140;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.checkout-btn:hover {
+    background-color: #007d32;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #121212;
+    color: #323137;
+    margin-top: 40px;
+}
+body {
+    background-color: #323137; /* Light gray background */
+}
+button {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #00c6ff;
+    transform: scale(1.05);
+}
+/* General footer styles */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.footer-logo img {
+    height: 50px;
+    width: auto;
+}
+
+/* Social icons container */
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+/* Social icon styles */
+.social-icon {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #00ff00; /* Razer green */
+}
+
+/* Icon font styles */
+.social-icon i {
+    pointer-events: none; /* Prevent hover issues with font icons */
+}
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Section Titles */
+.section-title h2 {
+    font-size: 2.5rem;
+    color: #00b140;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/* Why Choose Razer Section */
+.why-choose-razer {
+    padding: 60px 20px;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.feature {
+    background-color: #262626;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+}
+
+.feature i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #00b140;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Community Showcase Section */
+.community-showcase {
+    padding: 60px 20px;
+    background-color: #121212;
+    text-align: center;
+}
+
+.showcase {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.showcase-item {
+    width: 30%;
+    text-align: center;
+}
+
+.showcase-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.showcase-item p {
+    margin-top: 10px;
+    color: #00b140;
+    font-size: 1rem;
+}
+
+/* Video Section */
+.video-section {
+    padding: 60px 20px;
+    background-color: #1e1e1e;
+    text-align: center;
+}
+
+.videos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.video-item {
+    width: 45%;
+}
+
+.video-item iframe {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    border: none;
+}
+
+.video-item h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #00b140;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #262626;
+  }
+  
+  .logo img {
+    width: 150px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #00b140;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #007d32;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .search-bar {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #333;
+  }
+  
+  .cart-section {
+    padding: 20px;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #262626;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .cart-item img {
+    width: 100px;
+    border-radius: 8px;
+  }
+  
+  .item-details {
+    flex: 1;
+  }
+  
+  .item-quantity {
+    width: 50px;
+    text-align: center;
+  }
+  
+  .cart-summary {
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  .checkout-btn {
+    background-color: #00b140;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #007d32;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    background-color: #262626;
+    text-align: center;
+  }
+  
+  .payment-logos img {
+    width: 50px;
+    margin: 5px;
+  }
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #000000, #121212);
+    color: #fff;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form {
+    background: #262626;
+    padding: 30px 40px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.login-form h1 {
+    font-size: 2rem;
+    color: #00b140;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.login-form p {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: #121212;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    border-color: #00b140;
+    outline: none;
+}
+
+.error-message {
+    font-size: 0.8rem;
+    color: red;
+    display: none;
+}
+
+.btn-login {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #00b140;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #007d32;
+}
+
+.signup-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.signup-text a {
+    color: #00b140;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+.login-banner {
+    margin-left: 30px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.login-banner img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.login-banner p {
+    font-size: 1rem;
+    color: #ccc;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #121212;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #00b140;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #fff;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.signup-section {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.signup-section h2 {
+    text-align: center;
+    color: #00b140;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #262626;
+    color: #fff;
+}
+
+.signup-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #00b140;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #007d32;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+}
+  
